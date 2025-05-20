@@ -15,5 +15,10 @@ export const routes: Routes = [
   /*Ruta que muestra la tabla de usuarios*/
   { path: 'users', component: UserListComponent },
   /*Ruta para ver el detalle de un usuario , utilizando su ID*/
-  { path: 'users/:id', component: UserDetailComponent },
+  { path: 'users/:id',
+    loadComponent: () =>
+      import('./pages/user-detail/user-detail.component').then(
+        (m) => m.UserDetailComponent
+      ),
+    data: {renderMode: 'client' }},
 ];

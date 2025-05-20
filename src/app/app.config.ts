@@ -22,7 +22,6 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch()),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideClientHydration(withEventReplay()),
     importProvidersFrom(
       BrowserAnimationsModule,
       ReactiveFormsModule,
