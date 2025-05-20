@@ -30,6 +30,16 @@ Esto levanta un servidor en http://localhost:3000 con:
 
 En `auth` estan las credenciales de inicio de sesion y en `users` estan los usarios posibles a listar 
 
+## Deployment
+
+El proyecto se encuentra desplegado en Netlify en esta url
+
+https://userfrontapp.netlify.app
+
+Antes de abrir el dominio y poder utilizarlo correctamente hay que correr el `json-server` con el comando que puse anteriormente para poder ingresar y ver los usuarios
+
+Las credenciales de acceso son `admin` con su contraseña `123456`
+
 ## Tecnologías utilizadas
 
 - Angular 17 con [Standalone Components]
