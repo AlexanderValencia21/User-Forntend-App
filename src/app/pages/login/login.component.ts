@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, Validators, ReactiveFormsModule} from '@angular/forms'
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { ApiService } from '../../services/api.service';
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -8,23 +13,27 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatError } from '@angular/material/form-field';
+import { MatCard, MatCardTitle } from '@angular/material/card';
 @Component({
   selector: 'app-login',
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     ReactiveFormsModule,
     RouterModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatError,],
+    MatError,
+    MatCard,
+    MatCardTitle,
+  ],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-
-  loginForm:FormGroup;
-  loading=false;
+  loginForm: FormGroup;
+  loading = false;
   error: string | null = null;
 
   constructor(
@@ -34,7 +43,7 @@ export class LoginComponent {
   ) {
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
     });
   }
 
@@ -58,7 +67,7 @@ export class LoginComponent {
       error: (err) => {
         this.error = 'Error en el servidor';
         this.loading = false;
-      }
+      },
     });
   }
 }

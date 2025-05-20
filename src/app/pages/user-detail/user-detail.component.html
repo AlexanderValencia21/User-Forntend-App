@@ -1,1 +1,31 @@
-<p>user-detail works!</p>
+<div class="detail-wrapper">
+    <mat-card class="detail-card">
+      <mat-card-title>Detalle del Usuario</mat-card-title>
+  
+      <div *ngIf="user && !loading && !error">
+        <div *appEsMayor="user.age" class="badge">
+          Este usuario es mayor de edad
+        </div>
+  
+        <mat-card-content>
+          <p><strong>ID:</strong> {{ user.id }}</p>
+          <p><strong>Nombre:</strong> {{ user.name }}</p>
+          <p><strong>Email:</strong> {{ user.email }}</p>
+          <p><strong>Edad:</strong> {{ user.age }}</p>
+        </mat-card-content>
+  
+        <mat-card-actions>
+          <button mat-flat-button color="primary" (click)="goBack()">Volver</button>
+        </mat-card-actions>
+      </div>
+  
+      <div *ngIf="loading" class="spinner-container">
+        <mat-spinner></mat-spinner>
+      </div>
+  
+      <div *ngIf="error" class="error-message">
+        {{ error }}
+      </div>
+    </mat-card>
+  </div>
+  

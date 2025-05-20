@@ -1,0 +1,66 @@
+.detail-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f6f8;
+    padding: 16px;
+  }
+  
+  .detail-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  
+  mat-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  mat-card-content p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #222;
+  }
+  
+  mat-card-content strong {
+    font-weight: 600;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  button {
+    font-weight: 600;
+    padding: 6px 16px;
+  }
+  
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .badge {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  

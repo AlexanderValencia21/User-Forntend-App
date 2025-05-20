@@ -1,7 +1,8 @@
 {
   "users": [
     { "id": 1, "name": "Juan Pérez", "email": "juan@example.com", "age": 30 },
-    { "id": 2, "name": "María López", "email": "maria@example.com", "age": 25 }
+    { "id": 2, "name": "María López", "email": "maria@example.com", "age": 25 },
+    { "id": 3, "name": "Daniel Muñoz", "email": "daniel@example.com", "age": 15 }
   ],
   "auth": [
     { "id": 1, "username": "admin", "password": "123456" }
