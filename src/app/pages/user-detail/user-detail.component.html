@@ -1,5 +1,5 @@
 <div class="detail-wrapper">
-    <mat-card class="detail-card">
+    <mat-card class="detail-card" appResaltar>
       <mat-card-title>Detalle del Usuario</mat-card-title>
   
       <div *ngIf="user && !loading && !error">
@@ -7,7 +7,7 @@
           Este usuario es mayor de edad
         </div>
   
-        <mat-card-content>
+        <mat-card-content >
           <p><strong>ID:</strong> {{ user.id }}</p>
           <p><strong>Nombre:</strong> {{ user.name }}</p>
           <p><strong>Email:</strong> {{ user.email }}</p>
@@ -15,7 +15,7 @@
         </mat-card-content>
   
         <mat-card-actions>
-          <button mat-flat-button color="primary" (click)="goBack()">Volver</button>
+          <button mat-flat-button color="primary" (click)="goBack()" appResaltar>Volver</button>
         </mat-card-actions>
       </div>
   
