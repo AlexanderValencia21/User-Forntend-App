@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "name": "Juan Pérez", "email": "juan@example.com", "age": 30 },
+    { "id": 2, "name": "María López", "email": "maria@example.com", "age": 25 }
+  ],
+  "auth": [
+    { "id": 1, "username": "admin", "password": "123456" }
+  ]
+}
